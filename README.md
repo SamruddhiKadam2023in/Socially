@@ -1,36 +1,17 @@
-<h1 align="center">✨ Next.js Full Course - Build a Social App ✨</h1>
+🌐 Socially – A Modern Social Media Platform
 
-![Demo App](/public/screenshot-for-readme.png)
+🚀 Overview:
+Socially is a feature-rich social media platform built with modern web technologies, offering users an interactive and engaging experience. The platform enables users to create profiles, share posts, interact with content through likes and comments, and receive real-time notifications.
 
-[Watch Full Tutorial on Youtube](https://youtu.be/vUYopHWOURg)
+✨ Key Features:
 
-Highlights:
+🔑 User Authentication: Secure authentication powered by Clerk.
+🗄️ Database Management: Robust and scalable database using Neon Prisma.
+🎨 UI Components: Elegant and efficient UI elements built with ShadCN components.
+⚡ Framework: Developed using the Next.js framework for optimized performance and seamless navigation.
+📝 Profile Management: Users can create, update, and customize their profiles.
+📢 Post Creation & Interaction: Users can create posts, like ❤️, and comment 💬 on others' posts.
+🔔 Notifications: Real-time notifications for user interactions and updates.
+✏️ Profile Editing: Users have full control over modifying their profile details.
 
-- 🚀 Tech stack: Next.js App Router, Postgres, Prisma, Clerk & TypeScript
-- 💻 Server Components, Layouts, Route Handlers, Server Actions
-- 🔥 loading.tsx, error.tsx, not-found.tsx
-- 📡 API Integration using Route Handlers
-- 🔄 Data Fetching, Caching & Revalidation
-- 🎭 Client & Server Components
-- 🛣️ Dynamic & Static Routes
-- 🎨 Styling with Tailwind & Shadcn
-- 🔒 Authentication & Authorization
-- 📤 File Uploads with UploadThing
-- 🗃️ Database Integration with Prisma
-- 🚀 Server Actions & Forms
-- ⚡ Optimistic Updates
-
-### Setup .env file
-
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-DATABASE_URL=
-UPLOADTHING_TOKEN=
-```
-
-### Run the app
-
-```shell
-npm run dev
-```
+Socially is designed to provide a smooth and dynamic social networking experience while ensuring security, scalability, and responsiveness.
