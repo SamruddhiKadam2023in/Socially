@@ -1,7 +1,7 @@
-🌐 Socially – A Modern Social Media Platform
+🌐 Socially – A Social Media Platform
 
 🚀 Overview:
-Socially is a feature-rich social media platform built with modern web technologies, offering users an interactive and engaging experience. The platform enables users to create profiles, share posts, interact with content through likes and comments, and receive real-time notifications.
+Socially is a feature-rich social media platform built with web technologies, offering users an interactive and engaging experience. The platform enables users to create profiles, share posts, interact with content through likes and comments, and receive real-time notifications.
 
 ✨ Key Features:
 
