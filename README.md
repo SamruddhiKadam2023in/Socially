@@ -88,43 +88,6 @@ The application is designed to work across:
 
 ---
 
-# 🏗️ Application Architecture
-
-The application follows a client-server architecture:
-
-```text
-                    ┌──────────────────────┐
-                    │       User           │
-                    │  Web / Mobile Browser│
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │     Frontend         │
-                    │  UI / Components     │
-                    │  State Management    │
-                    └──────────┬───────────┘
-                               │
-                         HTTP / API
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │      Backend         │
-                    │   REST API / Server  │
-                    │ Authentication       │
-                    │ Business Logic       │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │      Database        │
-                    │ Users / Posts /      │
-                    │ Comments / Relations │
-                    └──────────────────────┘
-```
-
----
-
 # 🛠️ Tech Stack
 
 > Update this table if your implementation uses different technologies.
@@ -273,10 +236,6 @@ CLIENT_URL=http://localhost:5173
 
 If the project uses additional services such as cloud storage or authentication providers, add the corresponding credentials to the `.env` file.
 
-### ⚠️ Important
-
-Never commit your `.env` file to GitHub.
-
 Add it to `.gitignore`:
 
 ```gitignore
@@ -327,159 +286,6 @@ http://localhost:5173
 ```
 
 Open the displayed URL in your browser.
-
----
-
-# 🔄 Development Workflow
-
-The typical application workflow is:
-
-```text
-User
-  │
-  ▼
-Frontend Interface
-  │
-  ▼
-API Request
-  │
-  ▼
-Backend Route
-  │
-  ▼
-Controller / Business Logic
-  │
-  ▼
-Database
-  │
-  ▼
-API Response
-  │
-  ▼
-Frontend State Update
-  │
-  ▼
-Updated UI
-```
-
----
-
-# 👤 User Flow
-
-```text
-Register
-   │
-   ▼
-Login
-   │
-   ▼
-User Authentication
-   │
-   ▼
-Home / Social Feed
-   │
-   ├───────────────┐
-   ▼               ▼
-Create Post     Discover Users
-   │               │
-   ▼               ▼
-Publish         View Profile
-   │               │
-   └───────┬───────┘
-           ▼
-      Social Interaction
-           │
-      ┌────┼────┐
-      ▼    ▼    ▼
-     Like Comment Share
-```
-
----
-
-# 🗄️ Data Model
-
-The application revolves around several core entities.
-
-### User
-
-```text
-User
-├── ID
-├── Name
-├── Email
-├── Password
-├── Profile Information
-└── Created At
-```
-
-### Post
-
-```text
-Post
-├── ID
-├── Author
-├── Content
-├── Media
-├── Likes
-├── Comments
-└── Created At
-```
-
-### Comment
-
-```text
-Comment
-├── ID
-├── User
-├── Post
-├── Content
-└── Created At
-```
-
-Relationships:
-
-```text
-User
- │
- ├────────── creates ──────────► Post
- │                                │
- │                                ├── Likes
- │                                │
- │                                └── Comments
- │                                      │
- └────────── creates ───────────────────┘
-```
-
----
-
-# 🔑 Authentication Flow
-
-The authentication system protects user-specific functionality.
-
-```text
-User
- │
- ▼
-Login / Register
- │
- ▼
-Credentials Validation
- │
- ▼
-Authentication
- │
- ▼
-Token / Session
- │
- ▼
-Authenticated Requests
- │
- ▼
-Protected Resources
-```
-
-Authentication prevents unauthorized users from accessing protected functionality.
-
 ---
 
 # 🧩 Core Modules
@@ -720,65 +526,6 @@ Potential performance improvements include:
 
 ---
 
-# 🐳 Docker
-
-The project can optionally be containerized using Docker.
-
-A production architecture could be:
-
-```text
-                 ┌───────────────┐
-                 │    Browser    │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │    Frontend   │
-                 │    Container  │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │    Backend    │
-                 │    Container  │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │    Database   │
-                 │    Container  │
-                 └───────────────┘
-```
-
----
-
-# ☁️ Deployment
-
-The application can be deployed using platforms such as:
-
-### Frontend
-
-- Vercel
-- Netlify
-- Cloudflare Pages
-
-### Backend
-
-- Render
-- Railway
-- AWS
-- DigitalOcean
-
-### Database
-
-- MongoDB Atlas
-- PostgreSQL hosting providers
-- Cloud database services
-
-Production deployment should use environment-specific configuration and securely managed secrets.
-
----
-
 # 🤝 Contributing
 
 Contributions are welcome.
@@ -835,8 +582,6 @@ If you plan to use the project commercially, add an appropriate open-source lice
 # 👨‍💻 Author
 
 ## Samruddhi Kadam
-
-**B.Tech — Electronics & Computer Science**
 
 Interested in:
 
